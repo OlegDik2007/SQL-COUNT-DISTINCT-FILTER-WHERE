@@ -1,0 +1,3 @@
+SELECT COUNT(DISTINCT user_id) - COUNT(DISTINCT user_id) filter(where action = 'cancel_order') as users_count
+
+from user_actions
